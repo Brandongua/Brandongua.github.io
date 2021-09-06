@@ -1,0 +1,10 @@
+html{
+    /* correct lineheight in browsers */
+    line-height: 1.15;
+}
+
+h1{
+    /* be sure h1 is the correct size */
+    font-size: 2em;
+    margin: 0.67rm 0;
+}

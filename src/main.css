@@ -1,0 +1,66 @@
+/*vim:foldmethod=marker*/
+
+/* base styling {{{*/
+
+:root{
+    --title-color: green;
+    --link-color: blue;
+}
+
+html{
+    font-size: 1.2em;
+    font-family: Roboto, Arial, Sans-Serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.section-title{
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* }}} */
+
+/* welcome bar {{{ */
+.welcome-header{
+    text-align: center;
+    color: var(--title-color);
+}
+/* }}} */
+
+/* about {{{ */
+
+.about-paragraph{
+    --side-padding: 8vw;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+}
+
+/* }}} */
+
+/* project buttons {{{ */
+
+a.project-link{
+    text-decoration: none;
+}
+
+button.project{
+    background-color: darkgray;
+    color: var(--link-color);
+    font-size: 1.2rem;
+    border-radius: 0px; 
+    cursor: pointer;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    transition: font-size 100ms, background-color 100ms;
+}
+
+button.project:hover, button.project:focus{
+    background-color: white;
+    font-size: 1.3rem;
+}
+
+/* }}} */
