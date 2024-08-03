@@ -1,0 +1,69 @@
+/*<general styling>{{{*/
+:root {
+    --main: #24273a;
+    --text-color: hsl(231 23.42% 74.43%);
+
+    font-size: 1.2rem;
+}
+
+body {
+    background: var(--main);
+    color: var(--text-color);
+}
+
+header h1 {
+    color: hsl(208 30.00% 70.00%);
+    text-align: center;
+}
+
+section {
+    margin: 3rem;
+}
+
+section :is(h1, h2, h3, h4, h5, h6) {
+    text-align: center;
+}
+
+button {
+    background: var(--text-color);
+    color: var(--main);
+    border-style: solid;
+    border-radius: 20px;
+    border-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    padding: 1em;
+
+    transition: background 200ms,
+                color 200ms,
+                border-color 200ms
+}
+
+button:hover {
+    background: var(--main);
+    color: var(--text-color);
+
+    border-color: var(--text-color)
+}
+
+/*</general styling>}}}*/
+
+/*<language list> {{{*/
+#language-list li::marker {
+    content: ""
+}
+#language-list {
+    margin: 0;
+    padding: 0;
+}
+/*</language list> }}}*/
+
+/*<projects list> {{{*/
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5ch;
+}
+
+/*</projects list>}}}*/

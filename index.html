@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Brandon's Website</title>
-    <link rel="stylesheet" href="src/main.css" />
-    <link rel="stylesheet" href="src/normalize.css" />
-</head>
-<body>
-    <h1 class="welcome-header">Welcome to Brandon's site &#x1F600;</h1>
-    <main>
-		<section class="about-section" id="About">
-			<h2 class="section-title">
-			<strong>About</strong>
-			</h2>
-			<p class="about-paragraph">
-			I am a passionate self-taught computer programmer.
-			</p>
-			<p class="about-paragraph">
-			I am skilled in python, and have been working with it for 2 years.
-			</p>
-		<section>
-		<section class="projects" id="Projects">
-			<h2 class="section-title">
-				<strong>Projects</strong>
-			</h2>
-			<a href="https://github.com/Brandongua/DVD_Screen" class="project-link" tabindex="-1"><button class="project">DVD Screen Simulator</button></a>
-			<a href="https://github.com/Brandongua/tml" class="project-link" tabindex="-1"><button class="project">tml</button></a>
-		</section>
-    </main>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Brandon's Website</title>
+        <link rel="stylesheet" href="src/styles.css" />
+        <link rel="stylesheet" href="src/normalize.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>window.open("brandons-site")</h1>
+        </header>
+        <main>
+            <section class="about-section" id="About">
+                <h2 class="section-title">
+                    <strong>About</strong>
+                </h2>
+                <p class="about-paragraph">
+                    I am a passionate self-taught computer programmer.
+                </p>
+                <p class="about-paragraph">
+                    I have worked with several languages, including:
+                    <ul id="language-list">
+                        <li><code>python</code></li>
+                        <li><code>go</code></li>
+                        <li><code>rust</code></li>
+                        <li><code>bash</code>/<code>sh</code></li>
+                    </ul>
+                </p>
+                <p class="about-paragraph">
+                    My favorite language is python.
+                </p>
+            </section>
+            <hr>
+            <section class="projects" id="Projects">
+                <h2 class="section-title">
+                    <strong>Projects</strong>
+                </h2>
+                <div id="projects">
+                    <a href="https://github.com/Brandongua/DVD_Screen" class="project-link" tabindex="-1"><button
+                        class="project">DVD Screen Simulator</button></a>
+                    <a href="https://github.com/Brandongua/tml" class="project-link" tabindex="-1"><button
+                        class="project">tml</button></a>
+                    <a href="https://github.com/Brandongua/Markdown-converter" class="project-link"
+                        tabindex="-1"><button class="project">Markdown converter</button></a>
+                </div>
+            </section>
+        </main>
+    </body>
+
 </html>

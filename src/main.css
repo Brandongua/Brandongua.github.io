@@ -43,6 +43,16 @@ main{
 
 /* project buttons {{{ */
 
+section#Projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#Projects h2.section-title{
+    flex-basis: 100%;
+}
+
 a.project-link{
     text-decoration: none;
 }
