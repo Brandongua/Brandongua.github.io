@@ -2,6 +2,7 @@
 :root {
     --main: #24273a;
     --text-color: hsl(231 23.42% 74.43%);
+    --link-color: #a6da95;
 
     font-size: 1.2rem;
 }
@@ -9,6 +10,12 @@
 body {
     background: var(--main);
     color: var(--text-color);
+
+    font-family: roboto, sans, sans-serif;
+}
+
+a {
+    color: var(--link-color);
 }
 
 header h1 {
@@ -43,7 +50,11 @@ button:hover {
     background: var(--main);
     color: var(--text-color);
 
-    border-color: var(--text-color)
+    border-color: var(--link-color)
+}
+
+a {
+
 }
 
 /*</general styling>}}}*/
