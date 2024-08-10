@@ -59,6 +59,13 @@ a {
 
 /*</general styling>}}}*/
 
+/*<about>{{{*/
+#About {
+    width: 50%;
+    margin: auto auto;
+}
+/*</about>}}}*/
+
 /*<language list> {{{*/
 #language-list li::marker {
     content: ""
@@ -66,15 +73,22 @@ a {
 #language-list {
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 3ch;
 }
 /*</language list> }}}*/
 
 /*<projects list> {{{*/
 
+#Projects {
+    margin: 0;
+}
 #projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5ch;
+    margin: auto auto;
+    width: 50%;
 }
 
 /*</projects list>}}}*/
