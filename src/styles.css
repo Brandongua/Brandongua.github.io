@@ -7,6 +7,13 @@
     font-size: 1.2rem;
 }
 
+a {
+    color: lightblue;
+}
+a:visited {
+    color: pink;
+}
+
 body {
     background: var(--main);
     color: var(--text-color);
@@ -20,15 +27,10 @@ a {
 
 header h1 {
     color: hsl(208 30.00% 70.00%);
-    text-align: center;
 }
 
 section {
     margin: 3rem;
-}
-
-section :is(h1, h2, h3, h4, h5, h6) {
-    text-align: center;
 }
 
 button {
@@ -79,16 +81,31 @@ a {
 /*</language list> }}}*/
 
 /*<projects list> {{{*/
-
-#Projects {
-    margin: 0;
-}
-#projects {
+#project-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5ch;
     margin: auto auto;
     width: 50%;
 }
+
+#project-list a:hover {
+    background: var(--main);
+    color: var(--text-color);
+
+    border-color: var(--text-color)
+}
+
+a[external]:empty::before {
+    content: " (github)";
+}
+
+#projects a svg {
+    stroke: currentcolor;
+    fill: currentcolor;
+    width: 1.1em;
+    height: 1.1em;
+}
+
 
 /*</projects list>}}}*/

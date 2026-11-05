@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <title>Brandon's Website</title>
@@ -9,56 +8,131 @@
     </head>
 
     <body>
-        <header>
-            <h1 onclick="window.open('https://brandongua.github.io')">window.open("brandongua.github.io")</h1>
-        </header>
         <main>
-            <section class="about-section" id="About">
-                <h2 class="section-title">
-                    <strong>About</strong>
+            <section id="about">
+                <h2>
+                    About
                 </h2>
-                <p>
-                I started programming in 2017, and have been teaching myself ever since.<br>
-                The language I started with and am most proficient in is python.<br>
-                </p>
-                <p>
-                My favorite language is currently go.<br>
-                </p>
-                <p>
-                I am currently writing a personal nas web server in go</br>
-                I am also writing a color picker that is trying to be complaint with <a href="https://www.w3.org/TR/css-color-5/">w3 color level 5</a>.
-                </p>
-                <p class="about-paragraph">
-                    Other languages I am proficient in
-                    <ul id="language-list">
-                        <li><code>python</code></li>
-                        <li><code>bash</code>/<code>sh</code></li>
-                        <li><code>node</code></li>
-                        <li><code>html/css/js</code></li>
-                        <li><code>lua</code></li>
-                        <li><code>go</code></li>
-                        <li><code>rust</code></li>
-                    </ul>
-                </p>
+                <p> I am a passionate self-taught computer programmer. </p>
+
+                <p> I started teaching myself programming when I was 13
+                    and started working in open source at the age of 16, both
+                    on public repos, and personal ones. </p>
+
+                <p> I would choose a favorite language but I like different
+                    languages for different reasons. Bash is an excellent
+                    string manipulation language. Python is great
+                    for getting something done quick. Javascript and html
+                    are great for getting a simple gui going. Lastly
+                    C is fun for challenging my DSA skills, and understanding
+                    how systems truely work.
+
+                <p> My text editor of choice is neovim, which I've been using
+                    for 5 years. I use a relatively plain install of neovim
+                    with some custom and premade extensions </p>
+
+                <h3>Other Passions</h3>
+                <p> I'm a bit of a movie buff, I love movies and TV shows.
+                    They have inspired me to take up a bit of photography using
+                    a 35mm film camera, and one day I'd like to create a short
+                    film and even a movie!
             </section>
+
             <hr>
-            <section class="projects" id="Projects">
-                <h2 class="section-title">
-                    <strong>Projects</strong>
+
+            <section>
+                <h2>Skills</h2>
+
+                <h3>Frameworks and Application Types</h3>
+                <ul>
+                    <li> Web frontend </li>
+                    <li> Backend </li>
+                    <li> QT Desktop </li>
+                    <li> SDL </li>
+                    <li> CLI </li>
+                    <li> TUI </li>
+                    <li> Linux sysadmin </li>
+                </ul>
+
+                <h3>Languages</h3>
+                <ul>
+                    <li> Python (proficient) </li>
+                    <li> Javascript and Typescript (proficient) </li>
+                    <li> Bash/sh (proficient) </li>
+                    <li> Go (proficient) </li>
+                    <li> Rust </li>
+                    <li> C </li>
+                    <li> C++ </li>
+                    <li> Java </li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="projects">
+                <h2>
+                    Projects
                 </h2>
-                <div id="projects">
-                    <a href="https://github.com/Brandongua/escr" class="project-link" tabindex="-1">
-                        <button><abbr>escr</abbr> (expression script)</button>
-                    </a>
-                    <a href="https://github.com/Brandongua/DVD_Screen" class="project-link" tabindex="-1"><button
-                        class="project">DVD Screen Simulator</button></a>
-                    <a href="https://github.com/Brandongua/tml" class="project-link" tabindex="-1"><button
-                        class="project">tml</button></a>
-                    <a href="https://github.com/Brandongua/Markdown-converter" class="project-link"
-                        tabindex="-1"><button class="project">Markdown converter</button></a>
-                </div>
+
+                <section>
+                    <h3>
+                        DVD Screen Simulator
+                        <a href="https://github.com/Brandongua/dvdc" external></a>
+                    </h3>
+
+                    <p> A DVD screen simulation in C (using SDL2)
+                        with lua extensions. </p>
+
+                    <p> This is a recreation of my original dvd screen simulation
+                        in <span style="text-wrap: nowrap">python
+                        <a href="https://github.com/Brandongua/DVD_Screen" external>
+                        </a></span>, which was my first large project and therefore
+                        was not extensible, and harder to maintain </p>
+                </section>
+
+                <section>
+                    <h3>TML <a href="https://github.com/Brandongua/tml" external></a></h3>
+                    <p> The terminal markup language. A python program
+                        that takes an xml-like syntax representing an enhanced
+                        terminal output, and prints it in a way that a terminal
+                        can understand. </p>
+
+                    <figure>
+                        <figcaption>Example markup</figcaption>
+                        <pre>
+&lt;red&gt;
+    &lt;bold&gt;
+        Hello!
+    &lt;bold&gt;
+&lt;red&gt;
+                        </pre>
+                        <p> Result </p>
+                        <samp>
+                            <span style="color: red; font-weight: bold">
+                                Hello!
+                            </span>
+                        </samp>
+                </section>
+
+                <section>
+                    <h3>
+                        Markdown Converter
+                        <a href="https://github.com/Brandongua/Markdown-converter">
+                        </a>
+                    </h3>
+                    <p> A markdown &rarr; html live converter presented
+                        with a word processor UI. </p>
+                </section>
+
             </section>
         </main>
     </body>
 
+    <script>
+        for(let el of document.querySelectorAll("a[external]")) {
+            el.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                <path d="M 25.980469 2.9902344 A 1.0001 1.0001 0 0 0 25.869141 3 L 20 3 A 1.0001 1.0001 0 1 0 20 5 L 23.585938 5 L 13.292969 15.292969 A 1.0001 1.0001 0 1 0 14.707031 16.707031 L 25 6.4140625 L 25 10 A 1.0001 1.0001 0 1 0 27 10 L 27 4.1269531 A 1.0001 1.0001 0 0 0 25.980469 2.9902344 z M 6 7 C 4.9069372 7 4 7.9069372 4 9 L 4 24 C 4 25.093063 4.9069372 26 6 26 L 21 26 C 22.093063 26 23 25.093063 23 24 L 23 14 L 23 11.421875 L 21 13.421875 L 21 16 L 21 24 L 6 24 L 6 9 L 14 9 L 16 9 L 16.578125 9 L 18.578125 7 L 16 7 L 14 7 L 6 7 z"></path>
+                </svg>`
+        }
+    </script>
 </html>
